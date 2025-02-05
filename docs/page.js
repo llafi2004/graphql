@@ -143,7 +143,7 @@ function generateUserCharts(transactions, xpGained, xpLost, xpDistribution) {
                 data: xpValues,
                 backgroundColor: 'rgba(75, 192, 192, 0.6)',
                 borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
+                borderWidth: -1
             }]
         },
         options: {
@@ -164,7 +164,7 @@ function generateUserCharts(transactions, xpGained, xpLost, xpDistribution) {
                 data: [xpDistribution.projects, xpDistribution.audits, xpDistribution.quests],
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
+                borderWidth: 0
             }]
         },
         options: {
