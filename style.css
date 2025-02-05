@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    min-height: 100vh;
+    padding-left: 20px; /* Adjusts left spacing */
+  }
+  /* Profile Card */
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    max-width: 450px;
+    margin: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  /* Login Form */
+  #login-form {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    max-width: 350px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+  }
+  /* Headings */
+  .card h2, #login-form h2 {
+    color: #ffccff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin: 8px 0;
+  }
+  .card strong {
+    color: #ff99ff;
+  }
+  /* Buttons */
+  button {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #a288f1, #6a0dad);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  button:hover {
+    background: linear-gradient(135deg, #8e44ad, #6a0dad);
+  }
+  /* Logout Button */
+  .logout-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+  }
+  .logout-btn:hover {
+    background: linear-gradient(135deg, #c0392b, #a93226);
+  }
+  /* Toggle Buttons */
+  .toggle-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  .toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  /* Form Inputs */
+  #login-form input {
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: border-color 0.3s ease-in-out;
+  }
+  #login-form input:focus {
+    border-color: #a288f1;
+    outline: none;
+  }
+  /* Error Message */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .card, #login-form {
+      max-width: 90%;
+    }
+    button {
+      width: 100%;
+    }
+  }
